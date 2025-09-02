@@ -3,10 +3,10 @@ name: "My CodeQL config"
 packs:
   javascript:
     - codeql/javascript-queries:codeql-suites/javascript-security-extended.qls
+    - codeql/javascript-queries:codeql-suites/javascript-nodejs-extended.qls
     #- advanced-security/javascript-sap-xsjs-queries:codeql-suites/javascript-security-extended.qls
     - advanced-security/javascript-sap-cap-queries:codeql-suites/javascript-security-extended.qls
     - advanced-security/javascript-sap-ui5-queries:codeql-suites/javascript-security-extended.qls
-    - codeql/javascript-queries:codeql-suites/javascript-diagnostics.qls
 # paths:
 #   - srv
 #   - db 

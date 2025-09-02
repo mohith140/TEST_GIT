@@ -59,7 +59,21 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 app.use(cors()); // Allow all origins without restrictions
+// a.js
+var b = require('./b');
 
+var title = "Ms";
+
+function example() {
+  return title + " " + b.fullName;
+}
+
+// b.js
+var firstName = "Ada",
+    lastName = "Lovelace";
+
+exports.fullName = firstName + " " + lastName;exports.firstName = firstName;
+exports.lastName = lastName;
 // 13. 🚨 Missing HTTPS enforcement (Express)
 app.use((req, res, next) => {
   // No HTTPS redirect

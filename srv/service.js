@@ -72,11 +72,8 @@ const regex = new RegExp(userInput);
 
 // 15. 🚨 Exposing stack trace to client
 app.get('/crash', (req, res) => {
-  try {
-    throw new Error("Oops");
-  } catch (err) {
-    res.send(err.stack); // Don't expose stack trace
-  }
+if (/(?:start|end)(\[*|\{*)abc\2:(.*)/.test(input))
+	console.log("Found the pattern.");
 });
 
 // 16. 🚨 No rate limiting

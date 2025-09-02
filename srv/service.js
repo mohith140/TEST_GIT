@@ -72,6 +72,7 @@ const regex = new RegExp(userInput);
 
 // 15. 🚨 Exposing stack trace to client
 app.get('/crash', (req, res) => {
+  let input="klilkl78"
 if (/(?:start|end)(\[*|\{*)abc\2:(.*)/.test(input))
 	console.log("Found the pattern.");
 });

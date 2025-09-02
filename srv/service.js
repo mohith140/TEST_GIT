@@ -64,7 +64,7 @@ app.use(cors()); // Allow all origins without restrictions
 app.use((req, res, next) => {
   // No HTTPS redirect
   next();
-});
+}); 
 
 // 14. 🚨 Unsafe regex (ReDoS)
 const regex = new RegExp(userInput);
